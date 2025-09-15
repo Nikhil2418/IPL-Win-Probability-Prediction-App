@@ -38,7 +38,7 @@ We used the [IPL Dataset on Kaggle](https://www.kaggle.com/datasets/ramjidoolla/
 ---
 ## 📂 Project Structure
 <p align="center">
-  <img src="file_str.png" alt="file str" width="800"/>
+  <img src="images/file_str.png" alt="file str" width="800"/>
 </p>
 
 
@@ -47,7 +47,7 @@ We used the [IPL Dataset on Kaggle](https://www.kaggle.com/datasets/ramjidoolla/
 ## 🔄 Workflow
 
 <p align="center">
-  <img src="ipl_app_workflow.png" alt="Workflow Diagram" width="800"/>
+  <img src="images/ipl_app_workflow.png" alt="Workflow Diagram" width="800"/>
 </p>
 
 ### Steps:

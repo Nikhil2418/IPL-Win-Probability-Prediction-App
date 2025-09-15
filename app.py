@@ -184,6 +184,15 @@ def validate_inputs():
 
 # ---------- Prediction ----------
 def compute_and_predict():
+    # Map display team names to model team names
+    team_mapping = {
+        'Gujarat Titans': 'Gujarat Lions'  # Map new team to old team model knows
+    }
+
+    # Get the actual team names for the model
+    model_batting_team = team_mapping.get(batting_team, batting_team)
+    model_bowling_team = team_mapping.get(bowling_team, bowling_team)
+
     runs_left = target - score
     balls_left = 120 - (overs * 6)
     wickets_left = 10 - wickets
@@ -232,8 +241,8 @@ def compute_and_predict():
 
     input_df = pd.DataFrame(
         {
-            "batting_team": [batting_team],
-            "bowling_team": [bowling_team],
+            "batting_team": [model_batting_team],
+            "bowling_team": [model_bowling_team],
             "city": [selected_city],
             "Score": [score],
             "Wickets": [wickets_left],      # NOTE: model expects 'wickets left' per your original code
